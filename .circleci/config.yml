@@ -1,0 +1,30 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: fpco/stack-build:lts-11.13
+
+    working_directory: ~/h99
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.yaml" }}
+          - v1-dependencies-
+
+      - run: stack test
+
+      - save_cache:
+          paths:
+            - ~/.stack
+          key: v1-dependencies-{{ checksum "package.yaml" }}
+
+workflows:
+  version: 2
+
+  test:
+    jobs:
+      - build
