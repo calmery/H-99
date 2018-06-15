@@ -1,0 +1,45 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: ee6a9143de41d6632ace66f26f34c08df8243b988ce43ec04c6e6c6425f23ee9
+
+name:           H99
+version:        0.0.0
+homepage:       https://github.com/calmery/H-99#readme
+bug-reports:    https://github.com/calmery/H-99/issues
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/calmery/H-99
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  exposed-modules:
+      Part1
+  other-modules:
+      Paths_H99
+  default-language: Haskell2010
+
+test-suite H99-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      H99
+    , base >=4.7 && <5
+    , hspec
+  other-modules:
+      Part1Spec
+      Paths_H99
+  default-language: Haskell2010
