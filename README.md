@@ -1,5 +1,6 @@
 # H-99: Ninety-Nine Haskell Problems
 
+[![CircleCI](https://circleci.com/gh/calmery/H-99.svg?style=svg&circle-token=f41ad0a617e2810004d5c90e27bf355cf867d345)](https://circleci.com/gh/calmery/H-99)
 ![Progress](http://progressed.io/bar/1?title=Done)
 
 ## The Problems
