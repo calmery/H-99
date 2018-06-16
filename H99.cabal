@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ee6a9143de41d6632ace66f26f34c08df8243b988ce43ec04c6e6c6425f23ee9
+-- hash: f599f25afefc06674870ac8417338678746a906e925f50494f2c7c46e2dc0e9b
 
 name:           H99
 version:        0.0.0
@@ -25,6 +25,7 @@ library
       base >=4.7 && <5
   exposed-modules:
       Part1
+      Part2
   other-modules:
       Paths_H99
   default-language: Haskell2010
@@ -41,5 +42,6 @@ test-suite H99-test
     , hspec
   other-modules:
       Part1Spec
+      Part2Spec
       Paths_H99
   default-language: Haskell2010
