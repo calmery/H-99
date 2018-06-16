@@ -2,8 +2,8 @@
 
 module Part2Spec (spec) where
 
-import Test.Hspec
-import Part2
+import           Part2
+import           Test.Hspec
 
 spec :: Spec
 spec = do
