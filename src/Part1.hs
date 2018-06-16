@@ -1,4 +1,4 @@
-module Part1 (problem1, problem2, problem3, problem4, problem5) where
+module Part1 (problem1, problem2, problem3, problem4, problem5, problem6) where
 
 problem1 :: [a] -> a
 problem1 [x] = x
@@ -19,3 +19,6 @@ problem4 (_:xs) = 1 + problem4 xs
 problem5 :: [a] -> [a]
 problem5 [] = []
 problem5 (x:xs) = problem5 xs ++ [x]
+
+problem6 :: Eq a => [a] -> Bool
+problem6 xs = xs == problem5 xs

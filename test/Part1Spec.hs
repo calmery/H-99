@@ -39,3 +39,13 @@ spec = do
 
     it "myReverse [1, 2, 3, 4] == [4, 3, 2, 1]" $ do
       problem5 [1, 2, 3, 4] `shouldBe` [4, 3, 2, 1]
+
+  describe "Problem 6" $ do
+    it "isPalindrome [1, 2, 3] == False" $ do
+      problem6 [1, 2, 3] `shouldBe` False
+
+    it "isPalindrome \"madamimadam\" == True" $ do
+      problem6 "madamimadam" `shouldBe` True
+
+    it "isPalindrome [1, 2, 4, 8, 16, 8, 4, 2, 1] == True" $ do
+      problem6 [1, 2, 4, 8, 16, 8, 4, 2, 1] `shouldBe` True
