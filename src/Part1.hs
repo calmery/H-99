@@ -1,4 +1,4 @@
-module Part1 (problem1, problem2, problem3) where
+module Part1 (problem1, problem2, problem3, problem4) where
 
 problem1 :: [a] -> a
 problem1 [x] = x
@@ -11,3 +11,7 @@ problem2 (_:xs) = problem2 xs
 problem3 :: [a] -> Int -> a
 problem3 (x:xs) 1 = x
 problem3 (x:xs) n = problem3 xs (n - 1)
+
+problem4 :: [a] -> Int
+problem4 [_] = 1
+problem4 (_:xs) = 1 + problem4 xs
