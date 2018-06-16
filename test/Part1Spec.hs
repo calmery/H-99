@@ -32,3 +32,10 @@ spec = do
 
     it "myLength \"Hello, world!\" == 13" $ do
       problem4 "Hello, world!" `shouldBe` 13
+
+  describe "Problem 5" $ do
+    it "myReverse \"A man, a plan, a canal, panama!\" == \"!amanap ,lanac a ,nalp a ,nam A\"" $ do
+      problem5 "A man, a plan, a canal, panama!" `shouldBe` "!amanap ,lanac a ,nalp a ,nam A"
+
+    it "myReverse [1, 2, 3, 4] == [4, 3, 2, 1]" $ do
+      problem5 [1, 2, 3, 4] `shouldBe` [4, 3, 2, 1]
