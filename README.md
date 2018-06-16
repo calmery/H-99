@@ -1,7 +1,7 @@
 # H-99: Ninety-Nine Haskell Problems
 
 [![CircleCI](https://circleci.com/gh/calmery/H-99.svg?style=svg&circle-token=f41ad0a617e2810004d5c90e27bf355cf867d345)](https://circleci.com/gh/calmery/H-99)
-![Progress](http://progressed.io/bar/13?title=Done)
+![Progress](http://progressed.io/bar/14?title=Done)
 
 ## The Problems
 
@@ -21,7 +21,7 @@
 ### Questions 11 to 20: Lists, continued
 
 - [x] 11. Modified run-length encoding.
-- [ ] 12. Decode a run-length encoded list.
+- [x] 12. Decode a run-length encoded list.
 - [ ] 13. Run-length encoding of a list (direct solution).
 - [ ] 14. Duplicate the elements of a list.
 - [ ] 15. Replicate the elements of a list a given number of times.
