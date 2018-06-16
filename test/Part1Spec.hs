@@ -18,3 +18,10 @@ spec = do
 
     it "myButLast ['a'..'z'] == 'y'" $ do
       problem2 ['a'..'z'] `shouldBe` 'y'
+
+  describe "Problem 3" $ do
+    it "elementAt [1,2,3] 2 == 2" $ do
+      problem3 [1, 2, 3] 2 `shouldBe` 2
+
+    it "elementAt \"haskell\" 5 == 'e'" $ do
+      problem3 "haskell" 5 `shouldBe` 'e' 

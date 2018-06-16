@@ -1,7 +1,7 @@
 # H-99: Ninety-Nine Haskell Problems
 
 [![CircleCI](https://circleci.com/gh/calmery/H-99.svg?style=svg&circle-token=f41ad0a617e2810004d5c90e27bf355cf867d345)](https://circleci.com/gh/calmery/H-99)
-![Progress](http://progressed.io/bar/2?title=Done)
+![Progress](http://progressed.io/bar/3?title=Done)
 
 ## The Problems
 
@@ -9,7 +9,7 @@
 
 - [x] 1. Find the last element of a list.
 - [x] 2. Find the last but one element of a list.
-- [ ] 3. Find the K'th element of a list. The first element in the list is number 1.
+- [x] 3. Find the K'th element of a list. The first element in the list is number 1.
 - [ ] 4. Find the number of elements of a list.
 - [ ] 5. Reverse a list.
 - [ ] 6. Find out whether a list is a palindrome.
