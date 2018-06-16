@@ -61,3 +61,7 @@ spec = do
 
     it "flatten (List []) == []" $ do
       problem7 (List []) `shouldBe` []
+
+  describe "Problem 8" $ do
+    it "compress \"aaaabccaadeeee\" == \"abcade\"" $ do
+      problem8 "aaaabccaadeeee" `shouldBe` "abcade"
