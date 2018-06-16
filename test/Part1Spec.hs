@@ -11,3 +11,10 @@ spec = do
 
     it "myLast ['x','y','z'] == 'z'" $ do
       problem1 ['x', 'y', 'z'] `shouldBe` 'z'
+
+  describe "Problem 2" $ do
+    it "myButLast [1,2,3,4] == 3" $ do
+      problem2 [1, 2, 3, 4] `shouldBe` 3
+
+    it "myButLast ['a'..'z'] == 'y'" $ do
+      problem2 ['a'..'z'] `shouldBe` 'y'
