@@ -1,7 +1,7 @@
 # H-99: Ninety-Nine Haskell Problems
 
 [![CircleCI](https://circleci.com/gh/calmery/H-99.svg?style=svg&circle-token=f41ad0a617e2810004d5c90e27bf355cf867d345)](https://circleci.com/gh/calmery/H-99)
-![Progress](http://progressed.io/bar/7?title=Done)
+![Progress](http://progressed.io/bar/8?title=Done)
 
 ## The Problems
 
@@ -13,7 +13,7 @@
 - [x] 4. Find the number of elements of a list.
 - [x] 5. Reverse a list.
 - [x] 6. Find out whether a list is a palindrome.
-- [ ] 7. Flatten a nested list structure.
+- [x] 7. Flatten a nested list structure.
 - [ ] 8. Eliminate consecutive duplicates of list elements.
 - [ ] 9. Pack consecutive duplicates of list elements into sublists.
 - [ ] 10. Run-length encoding of a list.

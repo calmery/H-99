@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -fdefer-type-errors #-}
+
 module Part1Spec (spec) where
 
 import Test.Hspec
@@ -49,3 +51,13 @@ spec = do
 
     it "isPalindrome [1, 2, 4, 8, 16, 8, 4, 2, 1] == True" $ do
       problem6 [1, 2, 4, 8, 16, 8, 4, 2, 1] `shouldBe` True
+
+  describe "Problem 7" $ do
+    it "flatten (Elem 5) == [5]" $ do
+      problem7 (Elem 5) `shouldBe` [5]
+
+    it "flatten (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]]) == [1, 2, 3, 4, 5]" $ do
+      problem7 (List [Elem 1, List [Elem 2, List [Elem 3, Elem 4], Elem 5]]) `shouldBe` [1, 2, 3, 4, 5]
+
+    it "flatten (List []) == []" $ do
+      problem7 (List []) `shouldBe` []

@@ -1,4 +1,4 @@
-module Part1 (problem1, problem2, problem3, problem4, problem5, problem6) where
+module Part1 (problem1, problem2, problem3, problem4, problem5, problem6, NestedList(Elem, List), problem7) where
 
 problem1 :: [a] -> a
 problem1 [x] = x
@@ -22,3 +22,11 @@ problem5 (x:xs) = problem5 xs ++ [x]
 
 problem6 :: Eq a => [a] -> Bool
 problem6 xs = xs == problem5 xs
+
+-- Problem 7
+data NestedList a = Elem a | List [NestedList a]
+
+problem7 :: NestedList a -> [a]
+problem7 (Elem x) = [x]
+problem7 (List []) = []
+problem7 (List (x:xs)) = problem7 x ++ problem7 (List xs)
