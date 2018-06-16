@@ -65,3 +65,7 @@ spec = do
   describe "Problem 8" $ do
     it "compress \"aaaabccaadeeee\" == \"abcade\"" $ do
       problem8 "aaaabccaadeeee" `shouldBe` "abcade"
+
+  describe "Problem 9" $ do
+    it "pack ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'] == [\"aaaa\", \"b\", \"cc\", \"aa\", \"d\", \"eeee\"]" $ do
+      problem9 ['a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'] `shouldBe` ["aaaa", "b", "cc", "aa", "d", "eeee"] 

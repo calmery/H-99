@@ -1,4 +1,4 @@
-module Part1 (problem1, problem2, problem3, problem4, problem5, problem6, NestedList(Elem, List), problem7, problem8) where
+module Part1 (problem1, problem2, problem3, problem4, problem5, problem6, NestedList(Elem, List), problem7, problem8, problem9) where
 
 problem1 :: [a] -> a
 problem1 [x] = x
@@ -34,3 +34,12 @@ problem7 (List (x:xs)) = problem7 x ++ problem7 (List xs)
 problem8 :: Eq a => [a] -> [a]
 problem8 (x:[]) = [x]
 problem8 (x:y:xs) = if x == y then problem8 (x:xs) else [x] ++ problem8 (y:xs)
+
+problem9 :: Eq a => [a] -> [[a]]
+problem9 xs
+  | zs == [] = [ys]
+  | otherwise = [ys] ++ problem9 zs
+  where
+    helper :: Eq a => [a] -> ([a], [a])
+    helper xs@(x:_) = span (\y -> x == y) xs
+    (ys, zs) = helper xs
